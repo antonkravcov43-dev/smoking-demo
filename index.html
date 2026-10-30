@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- демо-версия: не индексировать до согласования с заведением -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>SmoKing — лаунж-бар с летней верандой в Новочеркасске · 18+</title>
+  <meta name="description" content="SmoKing — лаунж-бар в Новочеркасске: летняя веранда, авторский чай, трансляции, PlayStation, настольные игры и тематические вечера. Маяковского, 66. 18+">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+
+<!-- ========== 18+ ========== -->
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box">
+    <svg class="crown" viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34 8 10l14 12L32 4l10 18 14-12 4 24Z"/><path d="M6 38h52"/></svg>
+    <h2 id="ageTitle">Вам уже есть 18?</h2>
+    <p>Сайт содержит информацию для совершеннолетних. Подтвердите, пожалуйста, свой возраст.</p>
+    <div class="age__actions">
+      <button class="btn btn--gold" id="ageYes">Да, мне есть 18</button>
+      <button class="btn btn--line" id="ageNo">Нет</button>
+    </div>
+    <p class="age__denied" id="ageDenied" hidden>Извините, сайт доступен только совершеннолетним.</p>
+  </div>
+</div>
+
+<!-- ========== ШАПКА ========== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo" aria-label="SmoKing — на главную">
+      <svg class="crown" viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34 8 10l14 12L32 4l10 18 14-12 4 24Z"/><path d="M6 38h52"/></svg>
+      <span>Smo<b>King</b></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#veranda">Веранда</a>
+      <a href="#events">События</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#booking" class="btn btn--gold btn--small header__cta">Забронировать</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ========== ГЛАВНЫЙ ЭКРАН ========== -->
+<section class="hero">
+  <div class="hero__bg" style="background-image:url('img/hero.jpg')"></div>
+  <div class="container hero__content">
+    <p class="eyebrow">Лаунж-бар · Новочеркасск · 18+</p>
+    <h1 class="hero__title">Место, где любые вечера становятся <em>особенными</em></h1>
+    <p class="hero__lead">Уютный зал, летняя веранда на втором этаже, авторский чай, трансляции и тематические вечера. Маяковского, 66.</p>
+    <div class="hero__actions">
+      <a href="#booking" class="btn btn--gold">Забронировать стол</a>
+      <a href="#menu" class="btn btn--line">Смотреть меню</a>
+    </div>
+    <a class="hero__rating" href="https://yandex.ru/maps/org/smoking/1560210101/reviews/" target="_blank" rel="noopener">
+      <b>4,9</b>
+      <span><span class="stars">★★★★★</span>280 оценок на Яндекс Картах</span>
+    </a>
+  </div>
+  <div class="hero__hours">
+    <span>Сегодня</span><b id="todayHours">16:00 – 01:00</b>
+  </div>
+</section>
+
+<!-- ========== О НАС ========== -->
+<section class="section" id="about">
+  <div class="container about">
+    <div class="about__text reveal">
+      <p class="eyebrow">О нас</p>
+      <h2 class="h2">Атмосфера, ради которой <em>возвращаются</em></h2>
+      <p class="lead">SmoKing — одно из самых любимых мест для вечера в Новочеркасске. Здесь нет шумных компаний и суеты: мягкие диваны, спокойная chillout‑музыка, хорошая вентиляция и внимательный персонал.</p>
+      <ul class="perks">
+        <li><span class="perk__icon">✦</span><div><b>Летняя веранда</b>Большая, под крышей, на втором этаже</div></li>
+        <li><span class="perk__icon">✦</span><div><b>Трансляции</b>Футбол и матчи на большом проекторе</div></li>
+        <li><span class="perk__icon">✦</span><div><b>PlayStation и настолки</b>Для компании и для двоих</div></li>
+        <li><span class="perk__icon">✦</span><div><b>Можно со своим</b>Приносите еду и напитки</div></li>
+        <li><span class="perk__icon">✦</span><div><b>Авторский чай</b>Пять видов и кофе</div></li>
+        <li><span class="perk__icon">✦</span><div><b>Wi‑Fi и зарядки</b>Можно и поработать с ноутбуком</div></li>
+      </ul>
+    </div>
+    <div class="about__collage reveal">
+      <img class="c1" src="img/lounge-gold.jpg" alt="Зал с золотой подсветкой" loading="lazy">
+      <img class="c2" src="img/neon.jpg" alt="Неоновая надпись «Могу себе позволить»" loading="lazy">
+      <img class="c3" src="img/tunnel.jpg" alt="Неоновый коридор" loading="lazy">
+      <div class="since"><b>8+ лет</b><span>на Маяковского, 66</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== МЕНЮ ========== -->
+<section class="section section--alt" id="menu">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Меню</p>
+      <h2 class="h2">Что <em>заказать</em></h2>
+    </div>
+    <div class="menu reveal">
+      <div class="menu__list">
+        <div class="menu__group">
+          <h3>Авторский чай</h3>
+          <div class="menu__item"><span>Чай на выбор · 5 видов</span><i></i><b>380 ₽</b></div>
+        </div>
+        <div class="menu__group">
+          <h3>Кофе</h3>
+          <div class="menu__item"><span>Американо, латте, капучино</span><i></i><b>250 ₽</b></div>
+        </div>
+        <div class="menu__group">
+          <h3>Напитки</h3>
+          <div class="menu__item"><span>Газировка в ассортименте</span><i></i><b>200 ₽</b></div>
+          <div class="menu__item"><span>Энергетик в ассортименте</span><i></i><b>250 ₽</b></div>
+          <div class="menu__item"><span>Молочные коктейли и лимонады</span><i></i><b>в баре</b></div>
+        </div>
+        <div class="menu__group">
+          <h3>Кальян <small>18+</small></h3>
+          <div class="menu__item"><span>Классический</span><i></i><b>1 000 ₽</b></div>
+          <div class="menu__item"><span>Premium</span><i></i><b>1 200 ₽</b></div>
+          <p class="menu__note">Мастер уточнит вкус, крепость и тягу.</p>
+        </div>
+      </div>
+      <img class="menu__img" src="img/tea.jpg" alt="Медный чайник" loading="lazy">
+    </div>
+    <p class="menu__disclaimer reveal">Цены по данным Яндекс Карт — актуальное меню уточняйте у персонала.</p>
+  </div>
+</section>
+
+<!-- ========== ВЕРАНДА ========== -->
+<section class="veranda" id="veranda">
+  <div class="veranda__img" style="background-image:url('img/veranda.jpg')"></div>
+  <div class="container">
+    <div class="veranda__card reveal">
+      <p class="eyebrow">Летняя веранда</p>
+      <h2 class="h2">Свежий воздух <em>на втором этаже</em></h2>
+      <p>Большая веранда под крышей — сюда не страшен ни дождь, ни жара. Гирлянды, живые растения и мягкие кресла. Любимое место гостей: 100% положительных отзывов о веранде на Яндекс Картах.</p>
+      <div class="veranda__thumbs">
+        <img src="img/veranda-night.jpg" alt="Веранда вечером" loading="lazy">
+        <img src="img/veranda2.jpg" alt="Веранда днём" loading="lazy">
+        <img src="img/veranda3.jpg" alt="Уголок веранды" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== СОБЫТИЯ ========== -->
+<section class="section" id="events">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <p class="eyebrow">События</p>
+        <h2 class="h2">Не просто <em>вечер</em></h2>
+      </div>
+      <a class="btn btn--line btn--small" href="https://vk.com/smokingnovoch" target="_blank" rel="noopener">Афиша в ВК</a>
+    </div>
+    <div class="events">
+      <article class="event reveal">
+        <img src="img/standup.jpg" alt="Стендап в SmoKing" loading="lazy">
+        <div><b>Стендап</b><span>Живые выступления комиков прямо в зале</span></div>
+      </article>
+      <article class="event reveal">
+        <img src="img/party.jpg" alt="Тематическая вечеринка" loading="lazy">
+        <div><b>Тематические вечеринки</b><span>Хэллоуин, Новый год, костюмированные вечера</span></div>
+      </article>
+      <article class="event reveal">
+        <img src="img/cinema.jpg" alt="Трансляция на проекторе" loading="lazy">
+        <div><b>Трансляции и турниры</b><span>Футбол, матчи и игры на большом экране</span></div>
+      </article>
+      <article class="event reveal">
+        <img src="img/lounge2.jpg" alt="Лото и поэтические вечера" loading="lazy">
+        <div><b>Лото и поэзия</b><span>Лото на веранде и поэтические вечера</span></div>
+      </article>
+    </div>
+    <div class="party-cta reveal">
+      <div>
+        <h3>Празднуете день рождения?</h3>
+        <p>Соберём стол для большой компании, поможем с атмосферой и сохраним за вами лучшие места.</p>
+      </div>
+      <a href="#booking" class="btn btn--gold">Обсудить праздник</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ГАЛЕРЕЯ ========== -->
+<section class="section section--alt" id="gallery">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Галерея</p>
+      <h2 class="h2">Загляните <em>внутрь</em></h2>
+    </div>
+    <div class="gallery reveal" id="gallery-grid">
+      <img class="g-wide" src="img/logo-neon.jpg" alt="Зал с неоновым логотипом" loading="lazy">
+      <img src="img/tunnel.jpg" alt="Неоновый коридор" loading="lazy">
+      <img class="g-tall" src="img/sign.jpg" alt="Вывеска SmoKing" loading="lazy">
+      <img src="img/hall.jpg" alt="Вечер в зале" loading="lazy">
+      <img src="img/neon2.jpg" alt="Неоновая вывеска" loading="lazy">
+      <img class="g-tall" src="img/lounge.jpg" alt="Лаунж-зона" loading="lazy">
+      <img class="g-wide" src="img/veranda-night.jpg" alt="Веранда вечером" loading="lazy">
+      <img src="img/master.jpg" alt="Мастер за работой" loading="lazy">
+      <img class="g-tall" src="img/bar.jpg" alt="Бар" loading="lazy">
+      <img src="img/hookah-row.jpg" alt="Медные колбы" loading="lazy">
+      <img src="img/facade.jpg" alt="Вход с улицы Маяковского" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ========== ОТЗЫВЫ ========== -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="reviews-head reveal">
+      <div class="score">
+        <b>4,9</b>
+        <span class="stars">★★★★★</span>
+        <span>280 оценок · 110 отзывов<br>на Яндекс Картах</span>
+      </div>
+      <ul class="aspects">
+        <li><span>Веранда</span><i style="--v:100%"></i><b>100%</b></li>
+        <li><span>Атмосфера</span><i style="--v:95%"></i><b>95%</b></li>
+        <li><span>Кальян</span><i style="--v:87%"></i><b>87%</b></li>
+        <li><span>Персонал</span><i style="--v:85%"></i><b>85%</b></li>
+        <li><span>Напитки</span><i style="--v:83%"></i><b>83%</b></li>
+      </ul>
+    </div>
+    <div class="reviews">
+      <figure class="review reveal">
+        <blockquote>Отличное заведение, в которое хочется возвращаться. Приятный, общительный персонал, всегда подскажут и помогут, цены демократичные, чистенько, музыка ненавязчивая. Спасибо за тёплые приёмы!</blockquote>
+        <figcaption>Лилия Логачева</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>Одна из лучших в городе. Уютно внутри, можно поиграть в PlayStation, много настольных игр. Цены приятные. Летняя площадка крутая! И огромный плюс — можно со своими напитками и едой.</blockquote>
+        <figcaption>Diman</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>Нет орущих компаний и пьяных людей, всё культурно, персонал очень дружелюбный. Было очень приятно находиться в заведении.</blockquote>
+        <figcaption>Дима Леонтьев</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>Есть веранда под крышей на втором этаже. Мастер уточнил вкус, крепость и тягу и сделал вкусно. Wi‑Fi рабочий, есть проектор — как раз смотрели футбол. Можно и поработать на ноутбуке.</blockquote>
+        <figcaption>Эдуард К.</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>Нравится качество, персонал и атмосфера. Хорошо работает вентиляция — это очень важно, во многих других местах я задыхалась.</blockquote>
+        <figcaption>Валентина Т.</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>Красивый интерьер, приятная атмосфера, много мероприятий. Есть большая летняя веранда.</blockquote>
+        <figcaption>Марина</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========== БРОНЬ ========== -->
+<section class="section section--alt" id="booking">
+  <div class="container booking">
+    <div class="booking__text reveal">
+      <p class="eyebrow">Бронь</p>
+      <h2 class="h2">Забронируйте <em>стол</em></h2>
+      <p>Заполните форму — мы соберём сообщение для администратора. Отправьте его в сообщения нашей группы ВКонтакте или просто позвоните.</p>
+      <a class="phone-big" href="tel:+79508668844">+7 (950) 866‑88‑44</a>
+      <table class="hours">
+        <tr><td>Пн – Чт</td><td>16:00 – 01:00</td></tr>
+        <tr><td>Пт – Сб</td><td>16:00 – 03:00</td></tr>
+        <tr><td>Вс</td><td>16:00 – 01:00</td></tr>
+      </table>
+    </div>
+    <form class="form reveal" id="bookingForm" novalidate>
+      <div class="form__row">
+        <label>Имя<input name="name" type="text" placeholder="Как к вам обращаться" required></label>
+        <label>Гостей<input name="guests" type="number" min="1" max="30" value="2" required></label>
+      </div>
+      <div class="form__row">
+        <label>Дата<input name="date" type="date" required></label>
+        <label>Время<input name="time" type="time" value="20:00" required></label>
+      </div>
+      <label>Где сидим
+        <select name="zone">
+          <option>Зал</option>
+          <option>Летняя веранда</option>
+          <option>Без разницы</option>
+        </select>
+      </label>
+      <label>Пожелания<textarea name="comment" rows="3" placeholder="Например: день рождения, нужен стол у проектора"></textarea></label>
+      <button type="submit" class="btn btn--gold btn--block">Написать в ВКонтакте</button>
+      <a href="tel:+79508668844" class="btn btn--line btn--block">Позвонить</a>
+      <p class="form__hint" id="formHint">Текст брони скопируется — останется вставить его в диалог с группой.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ========== КОНТАКТЫ ========== -->
+<section class="section" id="contacts">
+  <div class="container contacts reveal">
+    <div class="contacts__info">
+      <p class="eyebrow">Контакты</p>
+      <h2 class="h2">Ждём <em>в гости</em></h2>
+      <dl>
+        <dt>Адрес</dt><dd>Новочеркасск, ул. Маяковского, 66</dd>
+        <dt>Телефон</dt><dd><a href="tel:+79508668844">+7 (950) 866‑88‑44</a></dd>
+        <dt>Оплата</dt><dd>Карта, наличные, перевод · подарочные сертификаты</dd>
+        <dt>Соцсети</dt><dd><a href="https://vk.com/smokingnovoch" target="_blank" rel="noopener">vk.com/smokingnovoch</a></dd>
+      </dl>
+    </div>
+    <div class="contacts__map">
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=40.102672%2C47.418957&mode=search&oid=1560210101&ol=biz&z=16.5" title="SmoKing на Яндекс Картах" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#top" class="logo">
+      <svg class="crown" viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34 8 10l14 12L32 4l10 18 14-12 4 24Z"/><path d="M6 38h52"/></svg>
+      <span>Smo<b>King</b></span>
+    </a>
+    <p class="footer__copy">© 2026 SmoKing, Новочеркасск · 18+</p>
+  </div>
+  <p class="container footer__warn">Курение вредит вашему здоровью. Информация на сайте предназначена для лиц старше 18 лет.</p>
+</footer>
+
+<a href="#booking" class="mobile-cta">Забронировать стол</a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Закрыть">×</button>
+  <button class="lightbox__nav lightbox__prev" aria-label="Предыдущее фото">‹</button>
+  <img alt="">
+  <button class="lightbox__nav lightbox__next" aria-label="Следующее фото">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
